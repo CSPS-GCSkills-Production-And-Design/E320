@@ -1,0 +1,123 @@
+<!-- InstanceBegin template="/Templates/gab-7.dwt" codeOutsideHTMLIsLocked="false" --><meta charset="UTF-8">
+<!-- InstanceParam name="x-showfeedback" type="boolean" value="false" -->
+
+<h1><!-- InstanceBeginEditable name="gab7_title" -->Exercice 11<!-- InstanceEndEditable --></h1> 
+<section role="content" class="col-md-12">
+  <div class="instructions"><!-- InstanceBeginEditable name="gab7instructions" -->Lisez le courriel de Rosa et corrigez les expressions erronées en gras à l’aide des listes déroulantes.<!-- InstanceEndEditable --></div> 
+</section>
+<div class="row gab">
+  <section class="col-sm-12"> 
+    
+    <!-- THIS IS AN ACTIVITY -->
+    <div class="qs-elearning-activity" style="display:none;" id="activity-1" data-activity-type="simple" data-tracking="false" data-simple-act-disable-mode="onright" data-dis-bkp="any||never||onright"> 
+      <!-- THIS IS AN EXERCISE -->
+      <div class="qs-exercise" id="exercise-qdd" data-score-value="10" data-feedback-type="instant">
+        <form>
+          
+          <!-- THIS IS A QUESTION -->
+          <div class="qs-question" id="qdd1" data-question-type="type-4" data-allow-duplicate-answer="true">
+            <fieldset>
+              <div class="qs-answers">
+              <!-- InstanceBeginEditable name="dictee" -->
+              <p class="drop_spacing">Bonjour Sylvie,</p>
+              <p class="drop_spacing">Je te fais parvenir une première version de l’échéancier auquel j’ai pensé. Nous sommes assez serrées dans le temps, c’est la raison pour laquelle j’aimerais que nous nous entendions le plus rapidement possible sur cet échéancier. Comme tu pourras le constater, j’ai mis quelques dates <strong>tentatives</strong> 
+                <label for="qdd1-a">
+                  <select data-rep="2" id="qdd1-a">
+                    <option value="0" disabled selected></option>
+                    <option value="1">tentantes</option>
+                    <option value="2">provisoires</option>
+                    <option value="3">spéculatives</option>
+                  </select>
+                  <span class="qs-vsfbh"></span> </label>
+                pour une rencontre avec la directrice du marketing, mais en fait je n’ai pas encore communiqué avec son bureau. </p>
+                <p class="drop_spacing">Il faudrait aussi qu’on se rencontre dès cette semaine afin de déterminer qui sera responsable de vérifier la qualité des extrants. <strong>À date </strong>
+                <label for="qdd1-b">
+                  <select data-rep="3" id="qdd1-b">
+                    <option value="0" disabled selected></option>
+                    <option value="1">Juste à date</option>
+                    <option value="2">Jusqu’à date</option>
+                    <option value="3">Jusqu’à maintenant</option>
+                  </select>
+                  <span class="qs-vsfbh"></span> </label>, je m’en occupais moi-même, mais ce projet est trop gros, je n’aurai plus le temps de le faire. <strong>Par le temps que tu liras </strong>
+                <label for="qdd1-c">
+                  <select data-rep="2" id="qdd1-c">
+                    <option value="0" disabled selected></option>
+                    <option value="1">Pour le temps que tu liras</option>
+                    <option value="2">D’ici à ce que tu lises</option>
+                    <option value="3">Avant même que tu lises</option>
+                  </select>
+                  <span class="qs-vsfbh"></span> </label>
+                ce courriel, nous aurons déjà des situations urgentes à régler, alors plus tôt sera notre rencontre, mieux ce sera.</p>
+                <p class="drop_spacing">Est-ce que tu serais disponible <strong>lundi le 30 juin</strong>
+                <label for="qdd1-d">
+                  <select data-rep="1" id="qdd1-d">
+                    <option value="0" disabled selected></option>
+                    <option value="1">le lundi 30 juin</option>
+                    <option value="2">le lundi le 30 juin</option>
+                    <option value="3">la lundi 30 juin</option>
+ 
+                  </select>
+                  <span class="qs-vsfbh"></span> </label>?</p>
+                  
+                  <p>Rosa</p>
+              
+              <!-- InstanceEndEditable --> 
+              <div class="boutons-feedback"><span class="wb-inv">Appuyez sur 'Valider', puis retournez voir pour la rétroaction.</span>
+                <input class="qs-submit btn btn-default" type="button" value="Valider">
+                <input class="recomm btn btn-default" type="button" value="Recommencer">
+              </div>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+      
+      <!-- END TESTING PERMANENTS --> 
+      
+    </div>
+  </section>
+</div>
+
+<div id="question-result-popup" class="modal-dialog modal-content overlay-def mfp-hide">
+    <section class="modal-content">
+        <div class="modal-body"><!-- InstanceBeginEditable name="popup_feedback" -->
+        	<h2>CLIN D’ŒIL LEXICAL</h2>
+            <p>Rappelez-vous qu’on ne dit pas :</p>
+            <ul>
+            	<li><span class="strike">date tentative</span>, mais <strong>date provisoire</strong></li>
+                <li><span class="strike">à date</span>, mais <strong>jusqu’à maintenant</strong> ou <strong>à ce jour</strong></li>
+                <li><span class="strike">par le temps que</span>, mais <strong>d’ici à ce que</strong></li>
+                <li><span class="strike">lundi le 30 juin</span>, mais <strong>le lundi 30 juin</strong></li>
+            </ul>
+		<!-- InstanceEndEditable --></div>
+    </section>
+</div>
+
+<script src="js/plugins/qsbeta.js"></script> 
+<script type="text/javascript">	 
+$(document).ready(function(e) {
+	$(".qs-submit").on("click", function(){
+		// Only show feedback when the right answer has been submitted
+		if($(".qs-question").attr("data-status")==="completed"){
+			// Display feedback in a popup, if applicable
+			var hasPopupFeedback = $.trim($('#question-result-popup .modal-body').text()).length > 0;
+			if (hasPopupFeedback) {
+				$(document).trigger( "open.wb-lbx", [
+					[
+						{
+							src: "#question-result-popup",
+							type: "inline"
+						}
+					]
+				]);
+				// Set focus to restart button after closing the feedback popup
+				setTimeout(function() {
+					$.magnificPopup.instance.st.callbacks.afterClose = function() {
+						$(".boutons-feedback .recomm").focus();
+					}
+				}, 400);
+			}
+		}
+	});
+});	
+</script> 
+<!-- InstanceEnd -->

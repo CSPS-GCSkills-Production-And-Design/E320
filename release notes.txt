@@ -1,0 +1,35 @@
+build v1.00
+built from wet 4.0.17
+
+changes in this version
+- removed IDs from menu
+- migrated to wet 4.0.17
+- moved settings pages to settings folder
+- moved interactions to content in scripts folder
+- class viewed dans menu not accessible (maybe add :after ou qqchose?)(DONE SJ)
+- Page lock via lockPage()/unlockPage() (TD)
+
+changes in last version:
+
+- removed firstPage from settings (sj)
+- scorm completion fix (SJ)
+- Big play Button in Audio & Video player(bl)
+- IE Compatibility view testTrack #14 (SC)
+- Popper does not close when clicking the close browser button, testTrack #29 (SC)
+- Quiz Pages - 2 timelines in firefox testTrack # 22 (SC)
+- le menu ne s'affiche pas correctement en bookmark ou en refresh (SJ)
+- french version of launch_en page (DONE SJ)
+- trigger completion when viewed all pages testTrack #36 (Done - SC)
+
+- https links (sj)
+- history(sc)
+- viewed pages (sc)
+- bouton close sur glossary,resources (sc)
+- toolbox toujours en anglais (sc)
+- glossaire - bouton Back to top seulement en anglais (sc)
+- enlever le scroll quand on ferme le lightbox - Testtrack billet #11 (sc)
+- Erreure JS dans menu en mode mobile - Testtrack billet #1 (sc)
+- mobile - menu top button cropped - TestTrack billet #18 (sc)
+- glossaire - mots qui commencent avec un accent - testTrack billet #21 (sc)
+- In IE8 Toolbox is not keyboard-friendly - testTrack billet #5 (sc)	
+- remove onclick=javascrip" etc. from supermenu file (SJ)

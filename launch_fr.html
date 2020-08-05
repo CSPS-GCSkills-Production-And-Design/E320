@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="fr" class="no-js">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Page de démarrage de la plateforme d'apprentissage EFPC</title>
+
+<!--[if lte IE 8]>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<![endif]-->
+<!--[if gt IE 8]><!-->
+ <!--script src="js/popper/jquery.min.js"></script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+<!--<![endif]-->
+    <script src="js/scorm/APIWrapper.js" type="text/javascript"></script>
+    <script src="js/popper/popupwindowscripts.js"></script>
+    <script src="settings/general.js"></script>
+    <script type="text/javascript">
+         confirmExitMessage = "Êtes-vous certain de vouloir quitter?";
+		 function noclose(){
+		 	document.getElementById("noclose").className="";
+		 }
+		 $(document).ready(function(e) {
+			 $("#coursename").html(courseTitle_fr)
+			 $("#subcoursename").html(courseSubtitle_fr)
+			 
+			 $(".theme").attr("href", "./theme/"+cssFileName)
+		});
+    </script>
+    <link rel="stylesheet" class="theme" href="./theme/blank.css" />   
+</head>
+<body  onload="checkLaunch('index_fr.html');return false;" class="launchpage">
+
+	<span id="noclose" class="obfuscated">Ne pas fermer cette fenêtre. Si vous quittez, la session en cours sera fermée.</span>
+    <header id="wordmark"><img src="./assets/CSPS_FIP_BlackRed_F.png" alt="Mot-symbole de l'École de la fonction publique" /></header>
+	<main>
+    	
+        <h1 id="title-area">
+        	<span id="title-welcome">Les mots pour communiquer</span>
+            <span></span>
+            <span id="subcoursename"></span>
+        </h1>
+        <div id="launch-area">
+        	<div id="launch-placement">
+            	<span id="manualpop">Si le cours ne s'ouvre pas automatiquement, cliquez sur </span>
+                <a href="#" onclick="launchPop('index_fr.html')" id="launch-btn">Commencer</a>
+        	</div>
+        </div>
+    	
+    
+    
+    </main>
+    <footer id="canada-logo"><img src="./assets/canada_flag.png" alt="Canada Logo" /></footer>
+        
+
+</body>
+</html>

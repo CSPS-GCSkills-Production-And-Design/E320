@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<h1>Défis</h1>
+<section role="content" class="col-md-12">
+  <div class="content-box"><!-- TemplateBeginEditable name="defis_box" -->
+    <p>{TEXT_HERE}</p>
+    <!-- TemplateEndEditable --> </div>
+    <br />
+    <p class="super-special-emphasis"><!-- TemplateBeginEditable name="defis_title" -->{TEXT_HERE}<!-- TemplateEndEditable --></p>
+    <ol class="no-padding">
+      <!-- TemplateBeginEditable name="defis_list" --><li>{LIST_HERE}</li><!-- TemplateEndEditable -->
+    </ol>
+    
+    <!-- TemplateBeginEditable name="defis_optional" -->
+    <!-- TemplateEndEditable -->
+</section>

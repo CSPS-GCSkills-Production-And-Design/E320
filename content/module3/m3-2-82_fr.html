@@ -1,0 +1,123 @@
+<!-- InstanceBegin template="/Templates/gab-4.dwt" codeOutsideHTMLIsLocked="false" --><meta charset="UTF-8">
+<!-- InstanceParam name="rep-a" type="text" value="wa" -->
+<!-- InstanceParam name="rep-b" type="text" value="wa" -->
+<!-- InstanceParam name="rep-c" type="text" value="wa" -->
+<!-- InstanceParam name="rep-d" type="text" value="ra" -->
+<!-- InstanceParam name="optional-c" type="boolean" value="true" -->
+<!-- InstanceParam name="optional-d" type="boolean" value="true" -->
+<!-- InstanceParam name="x-showfeedback" type="boolean" value="false" -->
+
+<h1><!-- InstanceBeginEditable name="gab4_title" -->Exercice 12.8<!-- InstanceEndEditable --></h1>
+<section role="content" class="col-md-12">
+  <div class="content-box"><!-- InstanceBeginEditable name="gab4_instructions" -->
+  	<p>Lisez l’annonce en portant attention au vocabulaire utilisé puis répondez à la question.</p>
+  <!-- InstanceEndEditable --></div>
+  <br />
+</section>
+<div class="row gab">
+  <section role="content" class="col-md-6 textbox"> <!-- InstanceBeginEditable name="gab4_text" --> 
+    <p>À tout le personnel,</p>
+  	<p>Le 14 février prochain, il y aura un atelier consacré aux différentes techniques de communication. Comme vous le savez, le service à la clientèle est une de nos priorités et la communication est un élément clé du succès de ce service. Les clients veulent que l'on comprenne leurs demandes et qu’on réponde à leurs besoins. Ils apprécient une écoute attentive. Bien que nous ayons la capacité d’entendre, écouter est une aptitude que nous devons développer et pratiquer. Il est donc important de se familiariser avec les différentes techniques de communication que sont l’écoute active, le résumé, le recours aux questions, la paraphrase, l’empathie, etc. Nous vous encourageons fortement à participer à cet atelier.</p>
+    <!-- InstanceEndEditable --></section>
+  <section role="content" class="col-md-6"> 
+    <!-- THIS IS AN ACTIVITY -->
+    <div class="qs-elearning-activity" id="activity-1" data-activity-type="simple" data-tracking="false" data-simple-act-disable-mode="onright" data-dis-bkp="any||never||onright">
+      <div class="clearfix"></div>
+      <!-- THIS IS THE GUIDLINES/INSTRUCTIONS ALONG WITH START QUIZ BUTTON (OPTIONAL)  --> 
+      <!-- THIS IS AN EXERCISE -->
+      <div class="qs-exercise" id="exercise-1" data-question-type="type-1" data-feedback-type="instant" data-random-answers="false" >
+        <form>
+          <!-- THIS IS A QUESTION -->
+          <div class="qs-question" id="q1">
+            <fieldset>
+              <!-- QUESTION MAIN TEXT -->
+              <div class="qs-text">
+                <!-- InstanceBeginEditable name="gab2_qarea" -->
+                <legend>Qui suis-je?</legend>
+                <p>Une présentation abrégée qui rend compte de l'essentiel.</p>
+                <!-- InstanceEndEditable --> </div>
+              <!-- QUESTION ANSWERS -->
+              <div class="qs-answers">
+              <div class="row">
+                <input class="wa col-xs-1" name="q1" id="q1-a" type="radio">
+                <label for="q1-a" class="col-xs-9"><!-- InstanceBeginEditable name="option-a" -->une compétence<!-- InstanceEndEditable --></label>
+                <span class="qs-vsfbh col-xs-1"></span> </div>
+              <div class="row">
+                <input class="wa col-xs-1" name="q1" id="q1-b" type="radio">
+                <label for="q1-b" class="col-xs-9"><!-- InstanceBeginEditable name="option-b" -->une demande<!-- InstanceEndEditable --></label>
+                <span class="qs-vsfbh col-xs-1"></span> </div>
+              
+              <div class="row">
+                <input class="wa col-xs-1" name="q1" id="q1-c" type="radio">
+                <label for="q1-c" class="col-xs-9"><!-- InstanceBeginEditable name="option-c" -->l’empathie<!-- InstanceEndEditable --></label>
+                <span class="qs-vsfbh col-xs-1"></span> </div>
+               
+              <div class="row">
+                <input class="ra col-xs-1" name="q1" id="q1-d" type="radio">
+                <label for="q1-d" class="col-xs-9"><!-- InstanceBeginEditable name="option-d" -->le résumé<!-- InstanceEndEditable --></label>
+                <span class="qs-vsfbh col-xs-1"></span> </div>
+               
+              <div class="boutons-feedback"><span class="wb-inv">Appuyez sur 'Valider', puis retournez voir pour la rétroaction.</span>
+                <input class="qs-submit btn btn-default" type="button" value="Valider">
+                <input class="recomm btn btn-default" type="button" value="Recommencer" onclick="masterStructure.loadTarget()">
+              </div>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+      <!-- END TESTING PERMS --> 
+    </div>
+  </section>
+</div>
+
+<div id="question-result-popup" class="modal-dialog modal-content overlay-def mfp-hide">
+    <section class="modal-content">
+        <div class="modal-body"><!-- InstanceBeginEditable name="popup_feedback" -->
+		<h2>CLIN D’ŒIL LEXICAL</h2>
+        <p>Rappelez-vous que…</p>
+        <p class="rapellez_indent">l’expression «&nbsp;rencontrer un besoin&nbsp;» est un calque de l’anglais <em>to meet a need</em>.</p>
+        <p>Il vaut mieux dire :</p>
+        <ul>
+        	<li>répondre à un besoin</li>
+        </ul>
+        <div class="example_ex">
+        <p>Ex. :</p>
+        </div>
+        
+        <div class="example_text">
+        <p>Les clients veulent qu’on <strong>réponde</strong> à leurs besoins.</p>
+        </div>
+        <div class="clearfix"></div>
+		<!-- InstanceEndEditable --></div>
+    </section>
+</div>
+
+<script src="js/plugins/qsbeta.js"></script> 
+<script type="text/javascript">	 
+$(document).ready(function(e) {
+	$(".qs-submit").on("click", function(){
+		// Only show feedback when the right answer has been submitted
+		if($(".qs-question").attr("data-status")==="completed"){
+			// Display feedback in a popup, if applicable
+			var hasPopupFeedback = $.trim($('#question-result-popup .modal-body').text()).length > 0;
+			if (hasPopupFeedback) {
+				$(document).trigger( "open.wb-lbx", [
+					[
+						{
+							src: "#question-result-popup",
+							type: "inline"
+						}
+					]
+				]);
+				// Set focus to restart button after closing the feedback popup
+				setTimeout(function() {
+					$.magnificPopup.instance.st.callbacks.afterClose = function() {
+						$(".boutons-feedback .recomm").focus();
+					}
+				}, 400);
+			}
+		}
+	});
+});
+</script> 
+<!-- InstanceEnd -->

@@ -1,0 +1,22 @@
+built from V1.03
+WET 4.0.17
+
+to be added:
+
+
+
+- glossaire par lettre
+- catalog : ajouter les wb-add dans la documentation
+
+
+
+
+Fixs:
+- removed everything from launch/index en/fr and put in settings
+- launch pages are standardized (DONE - SJ)
+- bug: arrows in the supermenu would go to next line , fixed in csps-fix(DONE - SJ)
+- bug: menu width shifting fixed in CSPS-fix(DONE - SJ)
+- bug : checkedViewedSubs 3 level that only took last level into account (DONE - SJ)
+- functionality to change default externals to lightbox or fixed size popups (DONE - SJ)
+- bookmark ; better syntax by christian(DONE - SJ)
+- issue en 1024 IE8 seulement. (ON HOLD - SJ);

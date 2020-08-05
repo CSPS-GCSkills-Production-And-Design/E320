@@ -1,0 +1,89 @@
+<!-- InstanceBegin template="/Templates/gab-7.dwt" codeOutsideHTMLIsLocked="false" --><meta charset="UTF-8">
+<!-- InstanceParam name="x-showfeedback" type="boolean" value="false" -->
+
+<h1><!-- InstanceBeginEditable name="gab7_title" -->Exercice 6.1<!-- InstanceEndEditable --></h1> 
+<section role="content" class="col-md-12">
+  <div class="instructions"><!-- InstanceBeginEditable name="gab7instructions" -->Complétez la phrase en choisissant les mots qui conviennent le mieux.<!-- InstanceEndEditable --></div> 
+</section>
+<div class="row gab">
+  <section class="col-sm-12"> 
+    
+    <!-- THIS IS AN ACTIVITY -->
+    <div class="qs-elearning-activity" style="display:none;" id="activity-1" data-activity-type="simple" data-tracking="false" data-simple-act-disable-mode="onright" data-dis-bkp="any||never||onright"> 
+      <!-- THIS IS AN EXERCISE -->
+      <div class="qs-exercise" id="exercise-qdd" data-score-value="10" data-feedback-type="instant">
+        <form>
+          
+          <!-- THIS IS A QUESTION -->
+          <div class="qs-question" id="qdd1" data-question-type="type-4" data-allow-duplicate-answer="true">
+            <fieldset>
+              <div class="qs-answers">
+              <!-- InstanceBeginEditable name="dictee" -->
+              <p>Le service 
+                <label for="qdd1-a">
+                  <select data-rep="2" id="qdd1-a">
+                    <option value="0" disabled selected></option>
+                    <option value="1">personnel</option>
+                    <option value="2">personnalisé</option>
+                  </select>
+                  <span class="qs-vsfbh"></span> </label>
+                est primordial si la fonction publique entend répondre aux différents 
+                <label for="qdd1-b">
+                  <select data-rep="1" id="qdd1-b">
+                    <option value="0" disabled selected></option>
+                    <option value="1">besoins</option>
+                    <option value="2">engagements</option>
+                  </select>
+                  <span class="qs-vsfbh"></span> </label>
+               de la population. </p>
+              <!-- InstanceEndEditable --> 
+              <div class="boutons-feedback"><span class="wb-inv">Appuyez sur 'Valider', puis retournez voir pour la rétroaction.</span>
+                <input class="qs-submit btn btn-default" type="button" value="Valider">
+                <input class="recomm btn btn-default" type="button" value="Recommencer">
+              </div>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+      
+      <!-- END TESTING PERMANENTS --> 
+      
+    </div>
+  </section>
+</div>
+
+<div id="question-result-popup" class="modal-dialog modal-content overlay-def mfp-hide">
+    <section class="modal-content">
+        <div class="modal-body"><!-- InstanceBeginEditable name="popup_feedback" --><!-- InstanceEndEditable --></div>
+    </section>
+</div>
+
+<script src="js/plugins/qsbeta.js"></script> 
+<script type="text/javascript">	 
+$(document).ready(function(e) {
+	$(".qs-submit").on("click", function(){
+		// Only show feedback when the right answer has been submitted
+		if($(".qs-question").attr("data-status")==="completed"){
+			// Display feedback in a popup, if applicable
+			var hasPopupFeedback = $.trim($('#question-result-popup .modal-body').text()).length > 0;
+			if (hasPopupFeedback) {
+				$(document).trigger( "open.wb-lbx", [
+					[
+						{
+							src: "#question-result-popup",
+							type: "inline"
+						}
+					]
+				]);
+				// Set focus to restart button after closing the feedback popup
+				setTimeout(function() {
+					$.magnificPopup.instance.st.callbacks.afterClose = function() {
+						$(".boutons-feedback .recomm").focus();
+					}
+				}, 400);
+			}
+		}
+	});
+});	
+</script> 
+<!-- InstanceEnd -->

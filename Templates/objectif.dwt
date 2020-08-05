@@ -1,0 +1,10 @@
+<meta charset="UTF-8">
+<h1>Objectif</h1>
+<section role="content" class="col-md-5"> <!-- TemplateBeginEditable name="objectif_image" --><img src="content/medias/images/{IMAGE_PATH_HERE}.jpg" class="img-responsive" alt="{ALT_TEXT_HERE}"><!-- TemplateEndEditable --> </section>
+<section role="content" class="col-md-7">
+  <p class="super-special-emphasis"><!-- TemplateBeginEditable name="objectif_title" -->{TEXT_HERE}<!-- TemplateEndEditable --></p>
+  <!-- TemplateBeginEditable name="objectif_content" -->
+  <p>{TEXT_HERE}</p>
+  <!-- TemplateEndEditable -->  
+  <div class="content-box"><!-- TemplateBeginEditable name="objectif_box" --><p>{TEXT_HERE}</p><!-- TemplateEndEditable --> </div>
+</section>
